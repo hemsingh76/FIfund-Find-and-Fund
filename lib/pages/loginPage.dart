@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../custom_widgets/custom_textField.dart';
+
 class loginPage extends StatefulWidget {
   const loginPage({super.key});
 
@@ -26,26 +28,11 @@ class _loginPageState extends State<loginPage> {
 
               SizedBox(height: 20),
 
-              TextField(
-                decoration: InputDecoration(
-                  labelText: 'Email',
-                  hintText: 'Enter your email',
-                  prefixIcon: Icon(Icons.person),
-                  border: OutlineInputBorder(),
-                ),
-              ),
+              customTextField('Email', Icons.email),
 
               SizedBox(height: 15),
 
-              TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  labelText: 'Password',
-                  hintText: 'Enter your password',
-                  prefixIcon: Icon(Icons.lock),
-                  border: OutlineInputBorder(),
-                ),
-              ),
+              customTextField('Password', Icons.lock),
 
               SizedBox(height: 20),
 

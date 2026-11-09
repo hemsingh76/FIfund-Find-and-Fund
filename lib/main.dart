@@ -1,4 +1,5 @@
 import 'package:fifund/pages/loginPage.dart';
+import 'package:fifund/pages/registerPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'FiFund',
-      home: loginPage(),
+      home: registerPage(),
     );
   }
 }
