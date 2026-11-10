@@ -12,8 +12,11 @@ class registerPage extends StatefulWidget {
 class _registerPageState extends State<registerPage> {
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
+        height: size.height,
+        width: size.width,
         color: Color(0x7C15),
         child:
         Center(

@@ -1,6 +1,5 @@
-import 'package:fifund/pages/loginPage.dart';
-import 'package:fifund/pages/registerPage.dart';
 import 'package:flutter/material.dart';
+import 'package:fifund/routes/router.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,10 +11,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'FiFund',
-      home: registerPage(),
+      routerConfig: router,
     );
   }
 }

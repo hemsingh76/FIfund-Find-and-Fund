@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../custom_widgets/custom_textField.dart';
 
@@ -48,9 +49,22 @@ class _loginPageState extends State<loginPage> {
                     child: Text("Login"),
                   ),
 
-                  SizedBox(width: 15),
+                  Container(
+                      margin: EdgeInsets.all(20),
+                      child: Text("Or", style: TextStyle(fontSize: 18))
+                  ),
 
-                  Text("Or", style: TextStyle(fontSize: 18)),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.greenAccent,
+                      foregroundColor: Colors.white,
+                    ),
+                    onPressed: () {
+                      context.go('/registerPage');
+                    },
+                    child: Text("Register!"),
+                  ),
+
                 ],
               ),
             ],
