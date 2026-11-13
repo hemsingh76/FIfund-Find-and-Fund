@@ -1,10 +1,12 @@
 import 'package:go_router/go_router.dart';
 
+import '../pages/dashboard.dart';
 import '../pages/loginPage.dart';
 import '../pages/registerPage.dart';
 
+//routes for the app
 final GoRouter router = GoRouter(
-    initialLocation: '/loginPage',
+    initialLocation: '/dashboard',
     routes: [
       GoRoute(
         path: '/loginPage',
@@ -15,5 +17,11 @@ final GoRouter router = GoRouter(
         path: '/registerPage',
         builder : (context, state) => registerPage(),
       ),
+
+      GoRoute(
+          path:'/dashboard',
+          builder: (context, state) => dashboard(),
+      ),
+
     ]
 );
