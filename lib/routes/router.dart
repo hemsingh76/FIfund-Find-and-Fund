@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:fifund/pages/bottomShell.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:go_router/go_router.dart';
@@ -47,7 +48,7 @@ final GoRouter router = GoRouter(
     ),
     GoRoute(
       path: '/dashboard',
-      builder: (context, state) => const dashboard(),
+      builder: (context, state) => const bottomShell(),
     ),
   ],
 );
